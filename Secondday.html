@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Login</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f00; /* Red color for header and footer */
+            color: #0c0c0c; /* White text color */
+            padding: 10px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: rgb(28, 215, 209); /* Red color for header and footer */
+            color: #02010a; /* White text color */
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #d9e1ea; /* Dark gray for navbar */
+            padding: 10px;
+        }
+        nav img {
+            height: 30px; /* Adjust height of logo */
+            vertical-align: middle;
+        }
+        .container {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid #6846e6;
+            border-radius: 5px;
+        }
+        .login-btn {
+          order:1;
+            background-color: rgb(13, 162, 48); 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: rgb(73, 14, 249);
+        }
+        
+        .signup-btn {
+          order:2;
+            
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background-color:rgb(230, 117, 17);
+            color: rgb(249, 249, 251);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup-btn:hover {
+            background-color: rgb(84, 7, 237);
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><b>Welcome to YouTube</b></h1>
+</header>
+
+<nav>
+    <img src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo.png" alt="YouTube Logo">
+</nav>
+
+<div class="container">
+    <h2>Login to Your Account</h2>
+    <form method="action">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login" class="login-btn">
+        <input type="submit" value="signup" class="signup-btn">
+        
+    
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 YouTube. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
