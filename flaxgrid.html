@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex practice</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 60px;
+            padding: 30px;
+            border-color: black;
+            height: 2%;
+            background-color: rgb(100, 179, 232);
+            border: black;
+            display:flex;
+            gap:20px;
+            flex-flow: wrap;
+            /* justify-content: center; */
+            align-content: space-evenly;
+            align-items: center;
+
+        }
+        .box{
+            border: 20px solid aquamarine;
+            width:100px;
+            flex-basis: 25%;
+            
+
+
+        }
+        #box1{
+            /* order:1;
+            flex-grow: 1;
+            flex-shrink: 2; */
+        }
+        #box2{
+            flex: 0 2 200px;
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+    </div>
+</body>
+</html>

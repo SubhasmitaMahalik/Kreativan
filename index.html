@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Color Example</title>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(44, 11, 229);
+    }
+</style>
+</head>
+<body>
+
+<div class="box" id="colorBox"></div>
+
+<script>
+    
+    const colorBox = document.getElementById('colorBox');
+
+    
+    colorBox.addEventListener('click', function() {
+      
+        colorBox.style.backgroundColor = 'green';
+    });
+</script>
+
+</body>
+</html>

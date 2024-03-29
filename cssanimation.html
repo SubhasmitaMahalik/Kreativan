@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+</head>
+<style>
+    .container{
+        margin: 20px;
+        padding:30px;
+        background-color: aquamarine;
+
+    }
+    .box{
+      background-color:rgb(22, 224, 39);
+
+        width:100px;
+        height:100px;
+        position:relative ;
+        animation-name: subhasmita ;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in;
+        animation-direction:normal;
+        animation-play-state:inherit;
+        
+    }
+    .box1{
+        background-color:rgb(238, 149, 117);
+
+width:100px;
+height:100px;  
+position:relative ;
+animation-name: subhasmita2;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-fill-mode: alternate;
+animation-timing-function: ease-in;
+animation-direction:reverse;
+animation-play-state:inherit;
+
+    }
+    @keyframes subhasmita {
+        /* 0%{
+            top:0px;
+            left:0px;
+        } */
+        from{
+            width:200px;
+            background-color: rgb(77, 6, 192);
+        }
+        to{
+            width:1400px;
+            transform:translateX('1000px');
+            background-color: rgb(14, 228, 42);
+        }
+    }
+    @keyframes subhasmita2{
+        from{
+            width:200px;
+            background-color: salmon;
+        }
+        to{
+            width:1400px;
+            transform:translateX('1000px');
+            background-color: blue;
+        }
+        
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+        <div class="box1">BOX
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
