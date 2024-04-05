@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background:cyan;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 70px;
+            transition: all 1s;
+            -webkit-animation: pump .8s linear infinite;
+            -moz-animation: pump .8s linear infinite;
+            -o-animation: pump .8s linear infinite;
+            animation: pump .8s linear infinite;
+        }
+        @-webkit-keyframes pump {
+            10% {width: 90px;}
+            30% {width: 70px;}
+        }
+        @-o-keyframes pump {
+            10% {width: 90px;}
+            30% {width: 70px;}
+        }
+        @-moz-keyframes pump {
+            10% {width: 90px;}
+            30% {width: 70px;}
+        }
+        @keyframes pump {
+            10% {width: 90px;}
+            30% {width: 70px;}
+        }
+    </style>
+</head>
+<body>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg" alt="" />
+</body>
+</html>
