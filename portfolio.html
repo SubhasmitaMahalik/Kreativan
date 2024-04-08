@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width", initial-scale="1.0">
+   <title>Personal portfolio</title>
+   <style>
+      /* Reset default browser styles */
+      * {
+         margin: 0;
+         padding: 0;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      /* Styles for header section */
+      .header {
+         width: 70%;
+         height: 70vh;
+         background-color: rgb(250, 253, 254);
+      }
+
+      /* Styles for navigation bar */
+      nav {
+         display: flex;
+         margin: auto;
+         width: 90%;
+         padding: 20px;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      nav ul li {
+         display: inline-block;
+         list-style: none;
+         margin: 10px;
+      }
+
+      nav ul li a {
+         text-decoration: none;
+         color: black;
+         font-weight: bolder;
+      }
+
+      nav ul li a:hover {
+         background-color: seagreen;
+         border-radius: 2px;
+         color: white;
+      }
+
+      .button-cv, .button-gfc{
+         display: inline-block;
+         margin-left: 0%;
+         border-radius: 5px;
+         transition: background-color 0.5s;
+         background: rgb(6, 107, 23);
+         padding: 10px;
+         text-decoration: none;
+         font-weight: bold;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+
+      .button-cv:hover {
+         background-color: white;
+         color: rgb(13, 13, 13);
+      }
+
+      .button-gfc{
+         background: rgb(51, 3, 244);
+      }
+
+      .button-gfc:hover {
+         background-color: white;
+         color: black;
+      }
+
+      /* Styles for body section */
+      .body {
+        position:inherit;
+         margin-left: 100px;
+         margin-top: 100px;
+      }
+
+      .body h1 {
+         font-size: 30px;
+         color: black;
+         margin-bottom: 20px;
+      }
+
+      .demo1 {
+         color: rgb(5, 14, 137);
+         margin-bottom: 30px;
+      }
+  
+      .demo2 {
+         color: black;
+         line-height: 20px;
+      }
+
+      .button-lrn, .button-hire{
+         background: rgb(250, 86, 5);
+         padding: 10px 12px;
+         text-decoration: none;
+         font-weight: bold;
+         color: whitesmoke;
+         display: inline-block;
+         margin: 30px 8px;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+         border: none;
+         letter-spacing: 1px;
+         cursor: pointer;
+      }
+
+      .button-lrn:hover {
+         background-color: whitesmoke;
+         color: black;
+      }
+
+      .button-hire {
+         background: black;
+      }
+
+      .button-hire:hover {
+         background-color: seagreen;
+      }
+
+      span {
+         color: seagreen;
+       }
+
+      /* Styles for image section */
+      .image {
+         width: 45%;
+         height: 100%;
+         position: absolute;
+         bottom: 0;
+         right: 100px;
+      }
+      .image img {
+         height: 50%;
+         position:absolute;
+         left: 50%;
+         bottom: 30%;
+         transform: translate(-60%);
+      }
+   </style>
+</head>
+<body>
+   <!-- Header section -->
+   <div class="header">
+    <nav>
+        <a href="#"> <img src="data:image/png;base64,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" alt="logo" class="logo" height="120px" width="150px"></a>
+
+         <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+            <li><button type="button"class="button-gfc">Get Free Consultant</button></li>
+            <li><button type="button" class="button-cv">DOWNLOAD CV</button></li>
+         </ul>
+      </nav>
+
+      <!-- Body section -->
+      <div class="body">
+         <p class="demo1">GET EVERY SINGLE SOLUTIONS.</p>
+         <h1>Hello <br> I'm Subhasmita  <span>Mahalik.</span></h1>
+         <p class="demo2">From concept to deployment, I bring ideas<br> to life as a versatile front end developer...</p>
+         <button type="button" class="button-lrn">LEARN MORE</button>
+         <button type="button" class="button-hire">HIRE ME</button>
+      </div>
+
+      <!-- Image section -->
+      <div class="image">
+         <img src="https://media.licdn.com/dms/image/D4D03AQE79LlX7kl3-w/profile-displayphoto-shrink_800_800/0/1686495353699?e=1718236800&v=beta&t=OjTOp_jVGHWpQZ_mJ1OCj-2NSUvmwIAkFPBKqXBOYek">     
+      </div>
+   </div>
+</body>
+</html>
