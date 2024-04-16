@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE LOADING</title>
+    <style>
+        body{
+            background-color: rgb(10, 211, 218);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        .container{
+            flex-direction: column;
+            height: 300px;
+            width: 200px;
+            background-color: rgb(237, 233, 233);
+            border: 1px solid blue;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        h3,h2{
+            color: rgb(65, 2, 189);
+
+        }
+        .circle{
+             margin: 7px auto;
+             width: 40px;
+             height: 40px;
+             border: 5px solid rgb(78, 203, 232);
+             border-radius: 50%;
+             border-top-color: rgb(13, 37, 194);
+             animation: ani 1s linear infinite;
+        }
+        @keyframes ani{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Loading</h2>
+        <h3>animation</h3>
+        <div class="circle">
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Ripple</title>
+    <style>
+        body{
+            background-color: #05e9ca;
+
+        }
+        .ripple{
+            width: 100px;
+            height: 100px;
+            margin:200px auto;
+            position: relative;
+        }
+        .ripple div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 6px solid rgb(222, 13, 13);
+            animation:ripple 1s cubic-bezier(.03,.54,.6,.63)infinite;
+            border-radius: 50px;
+
+        }
+        .ripple div:nth-child(2){
+            animation-delay: 0.5s;
+
+        }
+        @keyframes ripple{
+            0%{
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            5%{
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            5.1%{
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+            100%{
+                width: 88px;
+                height: 88px;
+                opacity: 0;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ripple">
+    <div>  </div>
+    <div>  </div>  
+</div>
+</body>
+</html>
